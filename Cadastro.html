@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="TelaCadastro/assets/css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="form-image">
+            <img src="TelaCadastro/assets/img/undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_undraw_selectoption_y9cm_mx7w_-2-_vjsk_js62_gghb_35qw_um1m_-1-_cqnl_5lof_-1-_arrh.svg" alt="">
+        </div>
+        <div class="form">
+            <form action="#">
+                <div class="form-header">
+                    <div class="title">
+                        <h1>Cadastre-se</h1>
+                    </div>
+                    <button class="botao-login"><a href="Login.html">Entrar</a></button>
+                </div>
+
+                <!-- formulario -->
+
+                <div class="input-group">
+                    <div class="input-box">
+                        <label for="firstname">Primeiro Nome</label>
+                        <input id="firstname" type="text" name="firstname" placeholder="Digite seu primeiro nome"
+                            required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="lastname">Sobrenome</label>
+                        <input id="lastname" type="text" name="lastname" placeholder="Digite seu sobrenome" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="email">E-mail</label>
+                        <input id="email" type="email" name="email" placeholder="Digite seu E-mail" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="number">Celular</label>
+                        <input id="number" type="tel" name="number" placeholder="(xx) xxxxx-xxxx" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Senha</label>
+                        <input id="password" type="password" name="password" placeholder="Digite sua Senha" required>
+                    </div>
+
+                    <div class="input-box">
+                        <label for="password">Confirme sua Senha</label>
+                        <input id="confirmPassword" type="password" name="confirmPassword"
+                            placeholder="Confirme sua Senha" required>
+                    </div>
+                </div>
+
+                <!-- genero -->
+
+                <div class="gender-inputs">
+                    <div class="gender-title">
+                        <h6>Gênero</h6>
+                    </div>
+
+                    <div class="gender-group">
+                        <div class="gender-input">
+                            <input type="radio" id="famele" name="famele">
+                            <label for="famele">Feminino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="male" name="male">
+                            <label for="male">Masculino</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="others" name="others">
+                            <label for="others">Outros</label>
+                        </div>
+
+                        <div class="gender-input">
+                            <input type="radio" id="none" name="none">
+                            <label for="none">Prefiro não Informar</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="continue-button">
+                    <button><a href="#">Continuar</a></button>
+                </div>
+            </form>
+        </div>
+    </div>
+</body>
+
+</html>
