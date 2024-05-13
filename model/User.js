@@ -12,4 +12,5 @@ class UserModel {
             body: JSON.stringify(userData)
         });
     }
+
 }

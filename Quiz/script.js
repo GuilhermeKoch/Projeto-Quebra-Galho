@@ -1,6 +1,6 @@
 let profissionais; // Variável global para armazenar os dados dos profissionais
 
-fetch('https://664115e5a7500fcf1a9f893e.mockapi.io/api/v1/profissionais')
+fetch('https://66416e463d66a67b3433d99d.mockapi.io/Profissionais')
     .then(response => response.json())
     .then(data => {
         // Dados dos profissionais foram obtidos com sucesso

@@ -6,13 +6,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Busca de Profissional</title>
     <link rel="stylesheet" href="Quiz/sytle.css">
+
 </head>
 
-<body>
-    <div class="container">
+<body style="background-image: url('public/assets/img/coins.jpg');">
+    <div class="container" style="width: 800px;">
+
+        <a style="background-color: #FACB23 ; text-decoration: none; padding: 0.5rem; border-radius: 15px; color: white;"
+            href="public/views/index.html">Voltar</a>
 
         <div></div>
-        <h1>Encontre o melhor profissional</h1>
+        <h1 style="margin-top: 1rem;">Encontre o melhor profissional</h1>
         <h1>para você!</h1>
 
         <div class="questionario">
@@ -47,14 +51,15 @@
 
         <div class="result" id="result" style="display: none;">
             <h2 class="subtitle">O melhor profissional para você é:</h2>
-            <img id="professional-image" src="" alt="Imagem do Profissional">
+            <img id="professional-image" src="" alt="Imagem do Profissional" style="width: 150px; height: auto;">
             <h1 id="professional-name"></h1>
-            <p id="professional-description"></p>
+            <p id="professional-description" style="margin-block: 2rem;"></p>
+            <div>
+                <a href="public/views/index.html "
+                    style="background-color: #FACB23; padding: 1rem; border-radius: 15px; font-size: 30px; text-decoration: none; color: white;">Contratar</a>
+            </div>
         </div>
-
-        
     </div>
-
     <script src="Quiz/script.js"></script>
 </body>
 
