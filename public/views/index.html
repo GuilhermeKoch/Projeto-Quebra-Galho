@@ -17,48 +17,20 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
     <script src="script.js"></script>
 </head>
+<script defer>
+    fetch('layout/header.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('header').innerHTML = data);
+
+    fetch('layout/footer.html')
+        .then(response => response.text())
+        .then(data => document.getElementById('footer').innerHTML = data);
+
+</script>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg bg-white">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">
-                <img class="logo" src="../assets/img/logo.png" alt="Logo">
-            </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav d-flex d-inline w-100 justify-content-around">
-                    <li class="nav-item d-flex flex-row align-items-center">
-                        <a class="nav-link active text-navbar" aria-current="page" href="#">O QUEBRA GALHO</a>
-                        <i class="bi bi-arrow-down-short" style="color: #FACB23;"></i>
-                    </li>
-                    <li class="nav-item d-flex flex-row align-items-center">
-                        <a class="nav-link text-navbar" href="#">NOSSOS SERVIÇOS</a>
-                        <i class="bi bi-arrow-down-short" style="color: #FACB23;"></i>
-                    </li>
-                    <li class="nav-item d-flex flex-row align-items-center">
-                        <a class="nav-link text-navbar" href="#">TIRE SUAS DUVIDAS</a>
-                        <i class="bi bi-arrow-down-short" style="color: #FACB23;"></i>
-                    </li>
-                    <form class="d-flex rounded-pill" role="search">
-                        <input class="form-control me-2" type="search" placeholder="PESQUISE AQUI" aria-label="Search">
-                    </form>
-                    <li class="nav-item d-flex flex-row align-items-center">
-                        <a class="nav-link text-navbar" href="login.html">ACESSE SUA CONTA</a>
-                    </li>
-                    <li class="nav-item d-flex flex-row align-items-center">
-                        <a class="rounded-pill btn text-button" style="background-color: #FACB23;"
-                            href="cadastro.html">CRIAR
-                            SUA
-                            CONTA</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
+    <div id="header"></div>
     <section>
         <div
             class="container-fluid w-100 py-4 px-5 bg-dark bg-gradient d-flex flex-row justify-content-between align-items-center">
@@ -66,13 +38,13 @@
                 <p style="font-size: 64px; color: white; font-weight: 900; margin-bottom: 1rem;">DESBLOQUEIE SEU
                     POTENCIAL
                     FINANCEIRO COM
-                    <span style="color: #FACB23;">KING COIN</span>
+                    <span style="color: #FACB23;">QUEBRA GALHO</span>
                 </p>
                 <p style="font-size: 25px; color: white; font-weight: 500;">ONDE CADA CLIQUE É UMA OPORTUNIDADE PARA
                     CONSTRUIR SEU FUTURO ECONÔMICO!</p>
-                <button class="btn"
+                <a href="../../Quiz.html" class="btn"
                     style="background-color: #FACB23; color: white; font-size: 40px; font-weight: 900; border-radius: 50px;">COMECE
-                    AGORA!</button>
+                    AGORA!</a>
             </div>
             <div class="col-5 align-items-end" style="width: 504px;"><img src="../assets/img/img-index-1.png"
                     alt="money" style="width: 504px; height: 530px;">
@@ -80,7 +52,7 @@
         </div>
     </section>
 
-    <section style="background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 10%, #ffffff 90%);">
+    <section id="diferencial" style="background: linear-gradient(to top, rgba(0, 0, 0, 0.1) 10%, #ffffff 90%);">
         <div class="container my-5 px-3">
             <div style="text-align: center; margin-block: 5rem;">
                 <p style="font-size: 64px; font-weight: 900; line-height: 77px;">DESCUBRA O PODER DE
@@ -129,47 +101,7 @@
         </div>
     </section>
 
-    <footer class="my-3">
-        <div class="container d-flex justify-content-between align-items-center">
-            <col-4 class="d-flex flex-column">
-                <img src="../assets/img/logo-name.png" alt="logo name" style="height: 103px;">
-                <div class="d-flex align-items-center my-2 justify-content-center gap-2">
-                    <a href="#"><img src="../assets/img/instagram.png" alt="instagram" style="width: 23px;"></a>
-                    <a href="#"><img src="../assets/img/linkedin.png" alt="instagram" style="width: 23px;"></a>
-                    <a href="#"><img src="../assets/img/whatsapp.png" alt="instagram" style="width: 23px;"></a>
-                    <a href="#"><img src="../assets/img/gmail.png" alt="instagram" style="width: 23px;"></a>
-                </div>
-            </col-4>
-            <col-4 class="d-flex flex-column gap-3 align-items-center">
-                <li class="nav-item d-flex flex-row align-items-center">
-                    <button class="rounded-pill btn text-button px-5 py-2" style="background-color: #FACB23;"
-                        href="#">BUSCA
-                        INTELIGENTE</button>
-                </li>
-                <li class="nav-item d-flex flex-row align-items-center">
-                    <button class="rounded-pill btn text-button px-5 py-2" style="background-color: #FACB23;"
-                        href="#">TIRE
-                        SUAS DUVIDAS</button>
-                </li>
-                <li class="nav-item d-flex flex-row align-items-center">
-                    <button class="rounded-pill btn text-button px-5 py-2" style="background-color: #FACB23;" href="#">O
-                        QUEBRA GALHO</button>
-                </li>
-            </col-4>
-            <col-4 class="d-flex flex-column gap-3 align-items-center">
-                <li class="nav-item d-flex flex-row align-items-center">
-                    <a class="rounded-pill btn text-button px-5 py-2" style="background-color: #FACB23;"
-                        href="login.html">ACESSE SUA CONTA</a>
-                </li>
-                <li class="nav-item d-flex flex-row align-items-center">
-                    <a class="rounded-pill btn text-button px-5 py-2" style="background-color: #FACB23;"
-                        href="cadastro.html">CRIE
-                        SUA
-                        CONTA</a>
-                </li>
-            </col-4>
-        </div>
-    </footer>
+    <div id="footer"></div>
 
 </body>
 
