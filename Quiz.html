@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Busca de Profissional</title>
+    <link rel="stylesheet" href="Quiz/sytle.css">
+</head>
+
+<body>
+    <div class="container">
+
+        <div></div>
+        <h1>Encontre o melhor profissional</h1>
+        <h1>para você!</h1>
+
+        <div class="questionario">
+            <div class="question" data-index="1" data-question="investiuAntes">
+                <p class="pergunta">Você já investiu antes?</p>
+                <div class="options">
+                    <button type="button" class="option" value="sim">Sim</button>
+                    <button type="button" class="option" value="nao">Não</button>
+
+                </div>
+            </div>
+
+            <div class="question" data-index="2" style="display: none;" data-question="perfil">
+                <p class="pergunta">Qual seu perfil de Investidor?</p>
+                <div class="options">
+                    <button type="button" class="option" value="conservador">Conservador</button>
+                    <button type="button" class="option" value="moderado">Moderado</button>
+                    <button type="button" class="option" value="arrojado">Arrojado</button>
+                </div>
+            </div>
+
+            <div class="question" data-index="3" style="display: none;" data-question="orcamento">
+                <p class="pergunta">Quanto você deseja investir?</p>
+                <div class="options">
+                    <button type="button" class="option" value="1a5Mil">Entre 1 e 5.000</button>
+                    <button type="button" class="option" value="5Mila50Mil">Entre 5.000 e 50.000</button>
+                    <button type="button" class="option" value="50MilaMilhao">Entre 50.000 e 1.000.000</button>
+                    <button type="button" class="option" value="maisdeMilhao">Mais de 1.000.000</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="result" id="result" style="display: none;">
+            <h2 class="subtitle">O melhor profissional para você é:</h2>
+            <img id="professional-image" src="" alt="Imagem do Profissional">
+            <h1 id="professional-name"></h1>
+            <p id="professional-description"></p>
+        </div>
+
+        
+    </div>
+
+    <script src="Quiz/script.js"></script>
+</body>
+
+</html>
